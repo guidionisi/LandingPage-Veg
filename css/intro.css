@@ -1,0 +1,104 @@
+.intro {
+  position: relative;
+}
+
+.intro-img {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 10em;
+  justify-content: space-evenly;
+}
+
+.intro-img img {
+  max-width: 420px;
+  max-height: 480px;
+  object-fit: cover;
+}
+
+.card-sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 420px;
+  height: 400px;
+  padding: 0 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #f0f0f0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 40px;
+  left: calc(50% - 200px);
+}
+
+.card-sobre h1 {
+  color: #1e1915;
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding-top: 24px;
+}
+
+.card-sobre p {
+  font-size: 1.5em;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  padding-top: 30px;
+}
+
+.card-phone {
+  font-size: 2.25em;
+  text-align: center;
+  letter-spacing: 0.05em;
+  padding-bottom: 40px;
+}
+
+/* ---------- RESPONSIVO ---------- */
+
+@media (max-width: 1200px) {
+  .intro-img {
+    margin-top: 7em;
+  }
+}
+
+@media (max-width: 840px) {
+  .intro-img {
+    margin-top: 5em;
+  }
+  .intro-img img {
+    max-width: 320px;
+    max-height: 360px;
+  }
+  .card-sobre {
+    height: 320px;
+    top: 20px;
+  }
+  .card-sobre p {
+    font-size: 1.25em;
+  }
+  .card-phone {
+    font-size: 2em;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .intro {
+    margin: 40px auto;
+  }
+  .intro-img {
+    display: none;
+  }
+  .card-sobre {
+    position: relative;
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
+    top: 0px;
+    left: 0px;
+  }
+}

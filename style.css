@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Vollkorn:wght@400;500;600;700&display=swap");
+
+@import "/css/reset.css";
+@import "/css/header.css";
+@import "/css/intro.css";
+@import "/css/citacao.css";
+@import "/css/produtos.css";
+@import "/css/missao.css";
+@import "/css/depoimentos.css";
+@import "/css/footer.css";
+
+html {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  background: linear-gradient(90deg, #ffffff, rgb(240, 240, 240));
+  font-family: "Vollkorn";
+  /* overflow-x: hidden; */
+}
+
+.container {
+  margin: 0 auto;
+  width: 1100px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    /* width: 900px; */
+  }
+}

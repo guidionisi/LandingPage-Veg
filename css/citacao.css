@@ -1,0 +1,52 @@
+.citacao {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  align-items: center;
+}
+
+.citacao span {
+  font-family: "Kalam";
+  font-size: 2.625em;
+  line-height: 1.6;
+  max-width: 30ch;
+  text-align: center;
+}
+
+.separador {
+  border-bottom: 4px solid #fda769;
+  width: 720px;
+  display: block;
+  padding-top: 40px;
+}
+
+/* ---------- RESPONSIVO ---------- */
+
+@media (max-width: 1200px) {
+  .citacao {
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 800px) {
+  .citacao span {
+    font-size: 2.25em;
+  }
+  .separador {
+    width: 640px;
+  }
+}
+@media (max-width: 600px) {
+  .citacao {
+    padding-top: 20px;
+  }
+  .citacao span {
+    font-size: 1.75em;
+    padding: 0 20px;
+  }
+  .separador {
+    width: 360px;
+    border-bottom: 2px solid #fda769;
+    margin-top: 20px;
+  }
+}
